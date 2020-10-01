@@ -1,11 +1,11 @@
-on remote box representing device:
+On remote box representing device:
 
 ssh -R <SERVER_PORT_FWD>:<DEVICE_IP>:<LOCAL_ssh_port(22)> <SERVER_USER>@<SERVER_IP> -p <SERVER_PORT>
 ssh -R 2210:192.168.137.21:22 user@192.168.137.31 -p 5022
 
 sshsimpleserver must be run as root (we need to set fd group)
 
-on connection side, initate to device with:
+On connection side, initate to device with:
 
 ssh <SERVER_IP> -p <SERVER_PORT_FWD>
 ssh localhost -p 2210
